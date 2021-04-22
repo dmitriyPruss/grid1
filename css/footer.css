@@ -1,0 +1,21 @@
+/* footer */
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(20deg, grey, lightgrey, white);
+}
+
+@media screen and (max-width: 700px){
+    #gridBlockLast{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, 50%);
+    }
+    #gridBlockLast > div{
+        align-self: start;
+    }
+}
+  
